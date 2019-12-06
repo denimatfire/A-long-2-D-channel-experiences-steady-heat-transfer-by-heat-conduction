@@ -1,0 +1,14 @@
+Consider it to be an unsteady case with the governing equation
+∂T
+∂t = α∇2T
+
+Use Crank-Nicolson scheme for the time integration and 2nd order central difference for
+the spatial discretization with ∆t = 10−3 and uniform grid size ∆x = ∆y = 1/256.
+
+Solve the set of simultaneous linear equations by the SOR method with over-relaxation
+factor ω = 1.5 and convergence level ǫ < 10−8
+
+Time integrate the equation until steady state is reached (ǫ < 10−8)
+
+Solve the set of simultaneous linear equations by the following methods: (I)Jacobi, (II)GaussSiedel, (III)SOR, (IV)ILU, (V)SIP with α = 0.9, (VI)BiCGSTAB and (VII)BiCGSTAB
+with SIP as preconditioner
